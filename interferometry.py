@@ -1,3 +1,10 @@
+"""
+Functions to analyze interferograms in realtime for AE98/99 2023 experimental run.
+
+Author: Audrey Farrell, audfarrell@g.ucla.edu
+
+"""
+
 from common_imports import *
 from skimage.transform import hough_line, hough_line_peaks, rotate
 from skimage.feature import canny
