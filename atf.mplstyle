@@ -1,0 +1,68 @@
+# Colorblind friendly plots for 2-column journals
+#
+# Set colorblind friendly color cycle
+#axes.prop_cycle   : cycler('color', ['d55e00','009e73','0072b2','e69f00', '785ef0','56b4e9'])
+axes.prop_cycle   : cycler('color', ['tab:red','tab:green','tab:blue','tab:orange', 'tab:purple','tab:pink', 'tab:olive', 'tab:cyan'])
+
+# set imshow origin to lower so (0,0) is always in the bottom left
+image.origin: lower
+
+figure.figsize  : 6.5, 4.5 
+figure.dpi      : 150
+savefig.format  : png
+savefig.dpi     : 200
+
+axes.xmargin    : 0
+
+# Set x axis
+xtick.direction : in
+xtick.major.size : 3
+xtick.major.width : 0.5
+xtick.minor.size : 1.5
+xtick.minor.width : 0.5
+xtick.minor.visible : True
+xtick.top : True
+
+# Set y axis
+ytick.direction : in
+ytick.major.size : 3
+ytick.major.width : 0.5
+ytick.minor.size : 1.5
+ytick.minor.width : 0.5
+ytick.minor.visible : True
+ytick.right : True
+
+# Set line widths
+axes.linewidth : 0.75
+grid.linewidth : 0.75
+lines.linewidth         : 1.25
+lines.markersize        : 2
+lines.solid_capstyle    : round
+lines.solid_joinstyle   : round
+
+# Remove legend frame
+legend.frameon : False
+legend.handlelength : 1
+
+figure.autolayout : True
+# Always save as 'tight'
+savefig.bbox : tight
+savefig.pad_inches : 0.05
+
+# Use serif fonts
+# font.serif : Times
+font.family : serif
+mathtext.fontset : dejavuserif
+font.size : 10 
+
+# Use LaTeX for math formatting
+text.usetex : False 
+text.latex.preamble : \usepackage{amsmath}
+
+# Change default colormap to plasma
+image.cmap        : gray#cet_rainbow #cet_rainbow4 
+image.aspect      : equal
+
+# Style color and contour plots
+pcolor.shading  : auto
+
